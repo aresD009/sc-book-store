@@ -133,7 +133,8 @@ SPACING SYSTEM (px)
   
   .grid {
     display: grid;
-    gap: 9.6rem;
+    row-gap: 9.6rem;
+    column-gap: 6.4rem;
   }
   .grid--2-cols {
     grid-template-columns: repeat(2, 1fr);
@@ -162,6 +163,13 @@ SPACING SYSTEM (px)
     margin-bottom: 9.6rem;
   }
   
+  .heading-tertiary {
+    font-size: 3.2rem;
+    color: #555;
+    margin-bottom: 1.6rem;
+    line-height: 1.2;
+  }
+
   .subheading {
     display:inline-block;
     color: #555;
