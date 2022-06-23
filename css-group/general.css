@@ -88,7 +88,6 @@ SPACING SYSTEM (px)
   /************************/
   /*GENERAL REUSEABLE COMPONENTS*/
   /************************/
-  
   .btn:link,
   .btn:visited {
     font-size: 2rem;
@@ -98,7 +97,8 @@ SPACING SYSTEM (px)
     display: inline-block;
     padding: 1.6rem 3.2rem;
     border-radius: 20rem;
-  
+  border:none;
+  cursor:pointer;
     transition: all 0.3s;
   }
   
@@ -144,6 +144,10 @@ SPACING SYSTEM (px)
   }
   .grid--4-cols {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .grid--center-v{
+      align-items: center;
   }
   
   .heading-primary {
