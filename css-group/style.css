@@ -153,3 +153,29 @@
     width: 50%;
     box-shadow: 1rem 2rem 4rem #000;
   }
+
+  /************************/
+  /* CTA SECTION */
+  /************************/
+
+  .section-cta{
+      padding: 9.6rem 0;
+
+  }
+  .cta{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #0e67b4;
+    height:50rem;
+    box-shadow: 1rem 2rem 4rem rgba(0, 0, 0, 0.2);
+    border-radius:11px;
+background-image: linear-gradient(to right,#0e67b4, #5695cb	
+);
+  }
+
+  .cta-text-box{
+
+  }
+  .cta-img-box{
+
+  }
