@@ -67,7 +67,10 @@ SPACING SYSTEM (px)
     margin: 0;
     box-sizing: border-box;
   }
-  
+  *:focus{
+    outline: none;
+    box-shadow: 0 0 0 0.8rem #041f36;
+  }
   html {
     /* font-size: 10px;*/
     font-size: 62.5%;

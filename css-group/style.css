@@ -243,3 +243,7 @@ padding: 4.8rem 6.4rem 6.4rem 6.4rem;
    border:none;
    
   }
+  .cta  *:focus{
+    outline: none;
+    box-shadow: 0 0 0 0.8rem #041f36;
+  }
