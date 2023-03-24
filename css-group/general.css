@@ -81,6 +81,7 @@ SPACING SYSTEM (px)
     line-height: 1;
     font-weight: 400;
     color: #e7f0f8;
+    overflow-x: hidden;
   }
   
   .container {
@@ -91,6 +92,7 @@ SPACING SYSTEM (px)
   /************************/
   /*GENERAL REUSEABLE COMPONENTS*/
   /************************/
+  
   .btn:link,
   .btn:visited {
     font-size: 2rem;

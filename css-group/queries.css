@@ -1,0 +1,213 @@
+
+/*////////////////1350 px ////////////////////*/
+@media (max-width:84em){
+    .hero{
+        max-width:120rem;
+
+    }
+    .heading-primary{
+        font-size: 4.4rem;
+    }
+}
+/*///////////////////1200px//////////////////////////// */
+@media(max-width:75em){
+html {
+font-size: 56.25%;
+}
+.heading-secondary{
+    font-size: 3.6rem;
+}
+.heading-tertiary{
+    font-size: 3rem;
+}
+.grid{
+    column-gap: 4.8rem;
+}
+.header{
+    padding:0 3.2rem;
+}
+.hero{
+    gap:4.8rem;
+}
+.main-nav-list{
+    gap:3.2rem;
+}
+}
+
+/*/////////////// 960 px /////////////*/
+@media(max-width:60em){
+html{
+    font-size:50%;
+}
+.section-hero{
+    padding:2.4rem 2.4rem 2.4rem 2.4rem;
+}
+.hero{
+    gap:0rem;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+}
+.hero-text-box{
+    text-align: center;
+
+}
+.hero-img-box{
+    text-align: center;
+}
+.books-bought{
+    justify-content: center;
+    align-items: center;
+   
+
+}
+.hero-img{
+    width:40%;
+    justify-self: center;
+    align-self: center;
+
+}
+.heading-secondary {
+   
+    margin-bottom: 4.8rem;
+
+}
+.section-what {
+    
+    padding: 6.4rem 0;}
+
+    .book-examples.grid.grid--3-cols{
+        row-gap:4.8rem;
+    }
+    
+    .step-img-box:nth-child(2){
+    grid-row: 1;
+    }
+    .step-img-box:nth-child(6){
+        grid-row: 5;
+        }
+    
+    .step-img-box{
+        transform: translateY(2.4rem);
+    }
+    
+}
+
+
+/*/////////////// Mobile nav 736px /////////////*/
+
+@media(max-width:46em){
+
+   
+    .btn-mobile-nav{
+       
+        display: block;
+      }
+      .main-nav{
+        background-color: rgba(29, 27, 27, 0.95);
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height: 100vh;
+        transform: translateX(100%);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s;
+
+       /*hide navigation visually*/
+       opacity:0;
+       /* 2. makeit unaccseible to mouse and keyboard */
+       pointer-events: none;
+       visibility: hidden;
+
+      }
+      .nav-open .main-nav{
+        opacity:1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateX(0%);
+
+    }
+
+    .nav-open .icon-mobile-nav[name="close-outline"]{
+        display:block;
+    
+      }
+      .nav-open .icon-mobile-nav[name="menu-outline"]{
+        display: none;
+      }
+    .main-nav-list{
+        flex-direction: column;
+        gap:4.8rem;
+    }
+    .main-nav-link:link,
+  .main-nav-link:visited {
+    
+    font-size: 3.2rem;
+   
+  }
+
+
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+}
+
+
+.book-container{
+    grid-column: 1/-1;
+}
+.cta{
+    grid-template-columns: 4fr 2fr;
+}
+
+.cta-text-box {
+   
+    padding: 4.8rem 1rem 6.4rem 1rem;
+}
+
+.container.grid.grid--4-cols{ 
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3.2rem;
+}
+}
+/* 512px */
+@media(max-width:32em){
+
+.hero{
+padding:0 3.2rem;
+}
+.section-hero{
+    padding:2.4rem 0 4.8rem 0;
+
+}
+.btn,
+.btn:link,
+  .btn:visited {
+
+    padding: 2.4rem 1.6rem;
+
+  }
+ .gallery{
+    
+    grid-template-columns: 1fr;
+}
+
+.cta{
+    grid-template-columns: 1fr;
+}
+.cta-img-box{
+    height:32rem;
+    grid-row:1;
+}
+.footer {
+    padding: 4.8rem 0;
+}
+.container.grid.grid--4-cols{
+    grid-template-columns: 1fr;
+}
+}
+
+
