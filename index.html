@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css-group/queries.css" />
 
       <script defer src="css-group/js/script.js"></script>
+      <script src="https://hcaptcha.com/1/api.js" async defer></script>
+
 
     <title>
       SoCal Antiquarian Book Store- We Buy Books in Southern California
@@ -296,7 +298,7 @@
                 unload old book collections or a book collector
                 trying to get rid off a collection. 
                  SoCal Book Store is here to make the process easy.</p>
-                 <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwpgjnwSyyh_E3D-O4McNkzDnPsM1xEznAQGh1pKvFRlaqnp8MyRyJ8GRIjbKWCWPSVwQ/exec">
+                 <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwpgjnwSyyh_E3D-O4McNkzDnPsM1xEznAQGh1pKvFRlaqnp8MyRyJ8GRIjbKWCWPSVwQ/exec" onsubmit="return validateForm(event)">
                   <div>
                   <label for="first-name">First Name</label>
                   <input required name="first-name" id="first-name"type="text" placeholder="First Name">
@@ -316,7 +318,10 @@
                    featuring prominent biologist Charles
                     Darwin, this is a first edition book">
                     </div>
+                    
                   <button>Contact Us!</button>
+                  <div id="hcaptcha" class="h-captcha" data-sitekey="b424636b-4c1e-471a-999e-33fe5bb90023"></div>
+                  <input type="hidden" id="hcaptcha-response" name="hcaptcha-response" value="">
 
                  </form>
             </div>

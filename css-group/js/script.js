@@ -140,4 +140,16 @@ checkFlexGap();
   }
 }
 */
-// Smooth scroll//
+// hcaptcha/
+
+function validateForm(event) {
+    var hcaptchaResponse = hcaptcha.getResponse();
+    if (!hcaptchaResponse) {
+      alert("Please complete the hCaptcha challenge");
+      return false;
+    }
+    return true;
+  }
+  
+  
+  
