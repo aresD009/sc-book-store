@@ -7,12 +7,15 @@ const currentYear= new Date().getFullYear();
 yearEl.textContent = currentYear;
 
 //  MAKE MOBILE NAVIGATION WORK //////////////////
-const btnNavEl = document.querySelector(".btn-mobile-nav");
-const headerEl = document.querySelector(".header");
 
-btnNavEl.addEventListener("click", function() {
-  headerEl.classList.toggle("nav-open");
-});
+function toggleMobileNav() {
+    const headerEl = document.querySelector(".header");
+    headerEl.classList.toggle("nav-open");
+  }
+  
+  document.querySelector(".btn-mobile-nav").addEventListener("click", toggleMobileNav);
+  
+
 
 ///////////////////////////////////////////////////////////
 //  SMOOTH SCROLLING ANIMATION
@@ -35,8 +38,7 @@ allLinks.forEach(function (link) {
 
     //close mobile nav
 
-    if (link.classList.contains("main-nav-link"))
-      headerEl.classList.toggle("nav-open");
+   
   });
 });
 
@@ -138,3 +140,4 @@ checkFlexGap();
   }
 }
 */
+// Smooth scroll//

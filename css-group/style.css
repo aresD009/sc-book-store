@@ -65,11 +65,14 @@
     color:aliceblue;
 
   }
-  .icon-mobile-nav[name="close-outline"]{
-    display:none;
-
+  
+  .icon-mobile-nav[name="close-outline"] {
+    display: none;
   }
   
+  .icon-mobile-nav[name="menu-outline"] {
+    display: block;
+  }
   /************************/
   /* Hero Section*/
   /************************/

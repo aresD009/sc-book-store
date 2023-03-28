@@ -132,13 +132,37 @@ html{
 
     }
 
-    .nav-open .icon-mobile-nav[name="close-outline"]{
+    /*.nav-open .icon-mobile-nav[name="close-outline"]{
         display:block;
     
       }
       .nav-open .icon-mobile-nav[name="menu-outline"]{
         display: none;
       }
+      */
+
+
+      .main-nav.nav-open {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateX(0%);
+      }
+      
+      .nav-open .icon-mobile-nav[name="close-outline"] {
+        display: block;
+      }
+      
+      .nav-open .icon-mobile-nav[name="menu-outline"] {
+        display: none;
+      }
+      
+      .icon-mobile-nav[name="close-outline"] {
+        display: none;
+      }
+      
+      
+      
     .main-nav-list{
         flex-direction: column;
         gap:4.8rem;
