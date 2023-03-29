@@ -148,7 +148,30 @@ function validateForm(event) {
       alert("Please complete the hCaptcha challenge");
       return false;
     }
-    return true;
+  
+    // Add this block of code to handle form submission
+    var form = document.querySelector(".gform");
+    var formData = new FormData(form);
+    fetch(form.action, {
+      method: "POST",
+      body: formData
+    })
+      .then(function (response) {
+        if (response.ok) {
+          // Redirect to the "thanks.html" page upon successful form submission
+          window.location.href = "thanks.html";
+        } else {
+          alert("An error occurred while submitting the form. Please try again.");
+        }
+      })
+      .catch(function (error) {
+        console.error("Error submitting the form:", error);
+        alert("An error occurred while submitting the form. Please try again.");
+      });
+  
+    // Prevent the default form submission behavior
+    event.preventDefault();
+    return false;
   }
   
   
